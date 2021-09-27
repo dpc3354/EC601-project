@@ -2,26 +2,30 @@ import os
 import json
 import requests
 
+#get key from system environment varibles
 bearer_token = os.environ.get("BEARER_TOKEN")
-query_params = {'query': '(from:YouTube )','tweet.fields': 'author_id'}
+
+#params for twitter users, spaces
 params = {"tweet.fields": "created_at"}
 query_params_space = {'query': 'NBA', 'space.fields': 'title,created_at', 'expansions': 'creator_id'}
 
-
+#create url for searching users
 def create_url():
     usernames = "usernames=TwitterDev,TwitterAPI,YouTube,TheLancet"
     user_fields = "user.fields=description,created_at"
     url = "https://api.twitter.com/2/users/by?{}&{}".format(usernames, user_fields)
     return url
-
+#create url for searching tweet time-line
 def create_url_1():
     user_id = 27013292
     return "https://api.twitter.com/2/users/{}/tweets".format(user_id)
 
+#create url for searching spaces
 def create_url_space():
     search_url = "https://api.twitter.com/2/spaces/search"
     return search_url
 
+#oauth authorization
 def bearer_oauth(r):
     r.headers["Authorization"] = f"Bearer {bearer_token}"
     r.headers["User-Agent"] = "EC601_test_1"
