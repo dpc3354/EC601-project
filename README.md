@@ -2,4 +2,4 @@
 
 [twitter API test]
 
-[google NPL API test】(./Google_NPL_test/readme.md)
+[google NPL API test】(./Google_NLP_test/readme.md)
