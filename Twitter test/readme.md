@@ -1,6 +1,6 @@
-# EC601-project1
+# EC601-project1  
 
-## twitter  test.py
+## twitter  test.py  
 > I use the twitter API to access tweetes. I have tested to serch users, serch time-line of one user's tweet, and tweet space. 
 > below are the results of my test program
 > resuls of serch "Twitter Dev", "Twitter API", "YouTube" and " The Lancet". 
