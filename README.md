@@ -16,6 +16,6 @@ salience       : 100.0%
 wikipedia_url  : -  
 mid            : -  
 > the test program is get a newest text from "@YouTube" and the content is "@Same_The_Dodos"  
-> the results shows below
+> the results shows above
 
 
