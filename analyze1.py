@@ -62,12 +62,14 @@ def analyze_text_entities(text):
 
 def main():
     username = sys.stdin.readline()
-    get_all_tweets(username)
-    file = open('tweet.json','r')
-    dic = json.load(file)
-    text = dic['text']
-    analyze_text_entities(text)
-
+    try:
+        get_all_tweets(username)
+        file = open('tweet.json','r')
+        dic = json.load(file)
+        text = dic['text']
+        analyze_text_entities(text)
+    except:
+        print("Username is not existed!!")
 if __name__ == '__main__':
     print("Please enter the username:")
     main()
