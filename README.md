@@ -8,14 +8,26 @@
 
 ## twitter text analyzer
 
->> It will get the newest twitter of the usrer and use the goolge nlp api to analyze
->  ================================================================================  
-name           : @Save_The_Dodos  
-type           : PERSON  
-salience       : 100.0%  
-wikipedia_url  : -  
-mid            : -  
-> the test program is get a newest text from "@YouTube" and the content is "@Same_The_Dodos"  
-> the results shows above
+>>the program will print "Please enter the username:"
+>>test input is "Youtube"
+>>output:
+================================================================================
+name           : Happy Halloween
+type           : OTHER
+salience       : 43.3%
+wikipedia_url  : -
+mid            : -
+================================================================================
+name           : @JoblessGarrett @ohmygodthemusic
+type           : OTHER
+salience       : 42.8%
+wikipedia_url  : -
+mid            : -
+================================================================================
+name           : Garrett
+type           : LOCATION
+salience       : 13.9%
+wikipedia_url  : -
+mid            : -
 
 
